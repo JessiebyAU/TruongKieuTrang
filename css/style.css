@@ -1,22 +1,80 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+main{
+    width: 100%; min-height: 500px;
 }
 
-body{
-    font-family: "Roboto", sans-serif; font-size: 16px; color: #666666; margin: 0;
+.gach-chan{
+    border-bottom: 3px solid darkred;
+}
+
+.text-do{
+    color: darkred;
+}
+
+.vien{
+    border: 1px solid darkred; padding: 15px; border-radius: 7px; position: relative; overflow: hidden;
+}
+
+.icon{
+    width: 80%; height: 45px; position: absolute; left: 10%; top: -15%; display: flex; justify-content: space-around; transition: all 1s;
+}
+
+.icon a{
+    height: 45px; width: 45px; background-color: darkred; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; color: white;
+}
+
+.icon a:hover{
+    background-color: rgba(213,213,213,1.00); color: darkred;
+}
+
+.vien:hover .icon{
+    top: 40%;
+}
+
+#feature{
+    width: 100%; min-height: 600px; background-image: url("../img/bg2.png"); background-repeat: no-repeat; background-size: cover; background-position: bottom center;
+}
+
+.pt-30{
+    padding-top: 50px;
+}
+
+.vien-trang{
+    border: 1px solid white; text-align: center; padding: 20px; color: darkred;
+}
+
+.vien-trang a{
+    text-decoration: none; color: darkred;
+}
+
+.vien-trang a:hover{
+    color: white;
+}
+
+#contact{
+    width: 100%; min-height: 600px; background-image: url("../img/Banner2.png"); background-repeat: no-repeat; background-size: cover; background-position: center center;
+}
+
+.shadow{
+    min-height: 300px; border: 1px solid #c7c7cc7; box-shadow: 5px 5px 5px gray; padding: 40px;
+}
+
+.form-control{
+    padding: 8px; width: 100%; margin-bottom: 10px;
 }
 
 header{
-    width: 100%; height: 60px; background-color: #d5d5d5; border-bottom: 1px solid darkred;
+    width: 100%; height: 60px; margin: auto;
+}
+
+.logo{
+    width: 100px; padding-top: 20px; 
 }
 
 .menu{
-    padding-top: 18px;   
+    padding-top: 18px; 
 }
 
 .menu ul{
@@ -24,11 +82,11 @@ header{
 }
 
 .menu ul li a{
-    padding: 10px 25px; text-decoration: none; font-size: 17px; color: #363636; border-radius: 20px;
+    padding: 10px 20px; text-decoration: none; font-size: 17px; color: #818181; border-radius: 20px;
 }
 
 .menu ul li a:hover{
-    background-color: darkred; color: white;
+    background-color: #9E4F2E; color: white;
 }
 
 #slide1 .owl-dots{ position:absolute; bottom: 10px; left:45%;}
@@ -46,73 +104,5 @@ header{
 #slide .owl-nav .owl-prev{ position:absolute; left:5%;}
 #slide .owl-nav [class*='owl-']:hover {
       background:none;border: none;
-      color:darkred;
+      color: #9E4F2E;
       text-decoration: none; }
-
-main{
-	width: 100%; min-height: 500px;
-}
-
-aside{
-	width: 30%; padding: 15px; background-color:antiquewhite; min-height: 400px;
-}
-
-.content{
-	width: 70%; padding: 15px; background-color:aqua; min-height: 400px;
-}
-
-.text-do{
-	color:#333333;
-}
-
-aside ul{
-	margin: 0; padding: 0; list-style: none; dispaly: flex; flex-direction: column;
-}
-
-aside ul a{
-	text-decoration: none; padding: 10px; dispaly: block; color: #666666;
-}
-
-aside ul a:hover{
-	background-color: darkred; color: white;
-}
-
-aside ul li{
-	border-bottom: 1px solid gray;
-}
-
-footer{
-    width: 100%; min-heigth: 300px; background-color: #D4D4D4;
-}
-
-footer a{
-    color: #414141; text-decoration: none;
-}
-
-footer a:hover{
-    color: darkred;
-}
-
-.bg-xanh{
-    width: 100%; min-height: 200px; background-color: aqua;
-}
-
-footer ul{
-    margin: 0; padding:0; list-style: none; display: flex; flex-direction: column;
-}
-
-footer ul li a{
-    padding: 10px; display: block; color: #B1B1B1;
-}
-
-/*
-.demo{
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.text-xanh{
-    color: blue;
-}*/
